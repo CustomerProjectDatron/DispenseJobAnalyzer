@@ -248,13 +248,20 @@ function onSvgClick(event: MouseEvent): void {
         </marker>
       </defs>
 
-      <rect x="0" y="0" :width="width" :height="height" fill="#f9fcf8" stroke="#d7e4d9" />
+      <rect
+        x="0"
+        y="0"
+        :width="width"
+        :height="height"
+        fill="var(--plot-bg)"
+        stroke="var(--plot-border)"
+      />
       <line
         :x1="padding"
         :x2="padding"
         :y1="padding"
         :y2="height - padding"
-        stroke="#9db9a0"
+        stroke="var(--plot-axis)"
         stroke-width="1"
       />
       <line
@@ -262,7 +269,7 @@ function onSvgClick(event: MouseEvent): void {
         :x2="width - padding"
         :y1="height - padding"
         :y2="height - padding"
-        stroke="#9db9a0"
+        stroke="var(--plot-axis)"
         stroke-width="1"
       />
 
@@ -318,8 +325,8 @@ function onSvgClick(event: MouseEvent): void {
 }
 
 .legend-item {
-  border: 1px solid #c7d6c9;
-  background: #f8fcf7;
+  border: 1px solid rgba(123, 156, 139, 0.28);
+  background: rgba(17, 26, 22, 0.92);
   border-radius: 999px;
   padding: 0.22rem 0.62rem;
   font-size: 0.8rem;
@@ -327,11 +334,12 @@ function onSvgClick(event: MouseEvent): void {
   align-items: center;
   gap: 0.4rem;
   cursor: pointer;
+  color: #d8e6de;
 }
 
 .legend-item.active {
-  border-color: #2e684a;
-  background: #edf7ef;
+  border-color: #4ca679;
+  background: rgba(27, 54, 40, 0.92);
 }
 
 .dot {
@@ -349,10 +357,10 @@ function onSvgClick(event: MouseEvent): void {
 }
 
 .empty {
-  border: 1px dashed #b5c9b8;
+  border: 1px dashed #3d5e4e;
   border-radius: 10px;
   padding: 0.8rem;
-  color: #3f5847;
+  color: #9eb8ab;
   font-size: 0.88rem;
 }
 

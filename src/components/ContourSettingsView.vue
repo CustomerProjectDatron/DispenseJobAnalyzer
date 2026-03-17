@@ -198,16 +198,16 @@ function toggleGroup(groupName: string): void {
 
 <style scoped>
 .subtitle {
-  color: #3a5948;
+  color: #9eb8ab;
   font-size: 0.88rem;
   margin-bottom: 0.8rem;
 }
 
 .empty {
-  border: 1px dashed #b5c9b8;
+  border: 1px dashed #3d5e4e;
   border-radius: 10px;
   padding: 0.8rem;
-  color: #3f5847;
+  color: #9eb8ab;
   font-size: 0.88rem;
 }
 
@@ -216,7 +216,7 @@ function toggleGroup(groupName: string): void {
 }
 
 .group-row td {
-  background: rgba(47, 87, 62, 0.12);
+  background: rgba(28, 53, 40, 0.72);
   padding: 0;
 }
 
@@ -231,7 +231,7 @@ function toggleGroup(groupName: string): void {
   gap: 0.45rem;
   cursor: pointer;
   font-weight: 650;
-  color: #173424;
+  color: #d7e7de;
 }
 
 .caret {
@@ -241,7 +241,7 @@ function toggleGroup(groupName: string): void {
 }
 
 .group-count {
-  color: #4c6f5b;
+  color: #8daf9e;
   font-weight: 500;
 }
 
